@@ -5,5 +5,6 @@
     ./hardware-configuration.nix
     ./boot.nix
     ./services.nix
+    ./gpu.nix
   ];
 }
