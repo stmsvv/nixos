@@ -10,5 +10,8 @@
     ./programs.nix
     ./gaming.nix
     ./theme.nix
+    ./audio.nix
+    ./env.nix
+    ./virtualization.nix
   ];
 }
