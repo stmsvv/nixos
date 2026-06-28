@@ -86,17 +86,16 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1781384126,
-        "narHash": "sha256-tg4rPo8cSHoBkvSFfVIcZ7Nd8f0Ub7wnXjP+Yxucwic=",
+        "lastModified": 1782253263,
+        "narHash": "sha256-QpGYFI5dPLNTqeaV73LaMuR11IzjMwnJcy4MAmKmFxY=",
         "owner": "xarblu",
         "repo": "kwin-effects-better-blur-dx",
-        "rev": "7902cf7e509f916e60d650eb7592e3232cdf9529",
+        "rev": "e8475d0a7045e1ef035d54cff9cf2c0b02f0aff0",
         "type": "github"
       },
       "original": {
         "owner": "xarblu",
         "repo": "kwin-effects-better-blur-dx",
-        "rev": "7902cf7e509f916e60d650eb7592e3232cdf9529",
         "type": "github"
       }
     },
