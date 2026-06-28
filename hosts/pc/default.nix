@@ -12,7 +12,6 @@
     ./theme.nix
     ./audio.nix
     ./env.nix
-    ./virtualization.nix
     ./pkgs.nix
   ];
 }
