@@ -21,7 +21,7 @@
     };
 
     kwin-effects-better-blur-dx = {
-      url = "github:xarblu/kwin-effects-better-blur-dx/7902cf7e509f916e60d650eb7592e3232cdf9529";
+      url = "github:xarblu/kwin-effects-better-blur-dx";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
