@@ -25,7 +25,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim.url = "github:nix-community/nixvim";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -56,13 +59,14 @@
                 overlays = [
                   (final: prev: {
                     stable = import inputs.nixpkgs-stable {
-                      inherit (final) config;
                       inherit (final.stdenv.hostPlatform) system;
+                      config = {
+                        allowUnfree = true;
+                      };
                     };
                   })
                 ];
               };
-
             }
             ./hosts/pc/default.nix
             (import-tree ./hosts/common/modules)

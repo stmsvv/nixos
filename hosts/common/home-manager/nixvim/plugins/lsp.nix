@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.nixvim.plugins = {
     treesitter.enable = true;
@@ -6,10 +6,22 @@
     lsp = {
       enable = true;
       servers = {
-        clangd.enable = true;
-        nixd.enable = true;
-        pyright.enable = true;
-        lua_ls.enable = true;
+        clangd = {
+          enable = true;
+          package = pkgs.clang-tools;
+        };
+        nixd = {
+          enable = true;
+          package = pkgs.nixd;
+        };
+        pyright = {
+          enable = true;
+          package = pkgs.pyright;
+        };
+        lua_ls = {
+          enable = true;
+          package = pkgs.lua-language-server;
+        };
       };
     };
 
