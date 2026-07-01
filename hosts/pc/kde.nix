@@ -4,9 +4,9 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    settings = {
-      Theme.CursorTheme = "Bibata-Modern-Classic";
-    };
+    # settings = {
+    #   Theme.CursorTheme = "Bibata-Modern-Classic";
+    # };
   };
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [

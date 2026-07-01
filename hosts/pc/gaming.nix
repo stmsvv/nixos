@@ -5,7 +5,7 @@
       enable = true;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
-      package = pkgs.stable.steam;
+      package = pkgs.steam;
     };
     gamemode.enable = true;
     gamescope.enable = true;
